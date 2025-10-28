@@ -1,1 +1,1 @@
-# Strands-tutorial
+Build a custom AI agent using the Strands SDK and Ollama — a practical, code-driven guide for creating local, privacy-friendly LLM agents that run entirely on your machine. Includes setup steps, examples, and workflow demonstrations.
