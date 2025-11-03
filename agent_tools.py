@@ -9,8 +9,6 @@ import asyncio
 from strands.models.openai import OpenAIModel
 from strands.handlers.callback_handler import PrintingCallbackHandler
 
-
-
 from configuration import TAVILY_API_KEY,DB_FILE,gpt_model
 
 os.environ['TAVILY_API_KEY'] = TAVILY_API_KEY
