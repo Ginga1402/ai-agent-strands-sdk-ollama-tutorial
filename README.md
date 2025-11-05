@@ -1,4 +1,4 @@
-# 📚 Text-to-SQL Agent: Natural Language Database Query System
+# 💹 Multi-Agent Financial Analyst: Self-Correcting System with Strands & OpenAI
 
 **A sophisticated, self-learning CLI tool built with the Strands Agents SDK that uses a multi-agent (Orchestrator) system to answer complex financial queries. It features specialist agents for SQL, live financial data (yfinance), and real-time news (Tavily), including a self-correcting loop to find and save new stock tickers.**
 
@@ -36,7 +36,7 @@ This system is built on the **Strands Agents SDK** and utilizes a **Hierarchical
 * It then uses the `sql_update_tool` to **permanently save the new ticker** to the SQLite database, allowing the agent to learn.
 
 ### LLM Integration
-* **Model:** `gpt-3.5-turbo` (Configurable via `tools.py`).
+* **Model:** `gpt-3.5-turbo` (Configurable via `agent-tools.py`).
 * **Provider:** OpenAI API.
 * **Framework:** Utilizes the Strands' native `OpenAIModel` provider.
 * **Context Handling:** Relies on **strict, role-based system prompts** for each specialist agent to ensure deterministic outputs (e.g., raw JSON, single tickers) and minimize hallucinations.
@@ -47,6 +47,9 @@ This system is built on the **Strands Agents SDK** and utilizes a **Hierarchical
 * **Web Research:** `Tavily` API, wrapped in the `news_search_tool` for agent-optimized search results.
 * **Memory:** `mem0_memory` tool provides a FAISS-backed vector store for the Orchestrator to persist conversational memory.
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cc43a73e-501e-46eb-9ada-e8121deea9c7" />
+
+---
 
 
 ### ✨ Key Features
@@ -62,7 +65,7 @@ This system is built on the **Strands Agents SDK** and utilizes a **Hierarchical
 
 ## 📁 Project Structure
 ```
-📦 ai-agent-strands-sdk-ollama-tutorial
+📦 strands-openai-financial-agent
 │
 ├── configuration.py        # Environment setup and configurations
 ├── agent-tools.py          # Core strands workflow and agent logic
@@ -87,8 +90,7 @@ This system is built on the **Strands Agents SDK** and utilizes a **Hierarchical
 
 **CLI Interface**
 
-<!-- <img width="1915" height="1080" alt="Image" src="https://github.com/user-attachments/assets/93324b05-b375-4cff-a76f-c6a2cf9a2175" /> -->
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e0a60cd7-3f7f-4dcb-94b2-479f41799486" />
 
 ---
 
@@ -101,8 +103,8 @@ This system is built on the **Strands Agents SDK** and utilizes a **Hierarchical
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/Ginga1402/ai-agent-strands-sdk-ollama-tutorial.git
-cd ai-agent-strands-sdk-ollama-tutorial
+git clone https://github.com/Ginga1402/strands-openai-financial-agent.git
+cd strands-openai-financial-agent
 ```
 
 ### Step 2: Install Dependencies
@@ -178,4 +180,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Star History
 
-If you find Text-to-SQL-Agent useful, please consider giving it a star ⭐ on GitHub!
+If you find strands-openai-financial-agent useful, please consider giving it a star ⭐ on GitHub!
